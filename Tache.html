@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tache.css">
+    <title>Document</title>
+</head>
+<body>
+  <section class="dashboard">
+    <div class="dashboard_right">
+      <nav class="dashbaord_nav">
+        <a href="#" class="dashbaord_nav_avatar">
+          <span></span>
+        </a>
+      </nav>
+      <main class="main">
+        <div class="main_header">
+          <h1 class="main_header_title">Dashboard</h1>
+          <input type="search" name="search" class=" main_header_search" style="width:200px">
+        </div>
+        <div class="main_header_actions">
+          <div class="main_header_actions_left">
+            <button class="main_header_actions_btn" id="addTask">+ Ajouter</button>
+          </div>
+          <div class="main_header_actions_right">
+            <button class="main_header_actions_right_btnDel rounded-btn del">x</button>
+            <select name="filter" class="main_header_actions_right_filter" id="">
+              <option value="0">Tous</option>
+              <option value="1">En cours</option>
+              <option value="2">Annulés</option>
+              <option value="3">Terminés</option>
+            </select>
+          </div>
+        </div>
+        <section class="main-task">
+          <div class="main-task__content" id="main-task__content">
+            <!-- <div class="main-task__content-item">
+              <div class="main-task__content-item__title">
+                Task title
+              </div>
+              <p class="main-task__content-item__desc">
+                orem ipsum dolor sit amet consectetur adipisicing elit. Est molestias doloremque ex vitae, voluptatibus, saepe sed necessitatibus, dolorum unde debitis vel aperiam quaerat. Maiores ad, minima aliquid consequuntur natus quae!
+              </p>
+              <div class="main-task__content-item__date">
+                2022-01-01
+              </div>
+              <div class="main-task__content-item__actions">
+                <span class="main-task__content-item__actions_status completed">
+                  Terminée
+                </span>
+                <div>
+                  <button class="rounded-btn see-more">v+</button>
+                  <button class="rounded-btn modify">m</button>
+                  <button class="rounded-btn validate">va</button>
+                </div>
+              </div>
+              <input type="radio" name="checkTask" class="checkTask" id="checkTask">
+            </div> -->
+          </div>
+
+        </section>
+      </main>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="taskModal">
+    <div class="modal-container">
+      <h2 class="modal_title">Ajouter une tache</h2>
+      <form action="#" class="form">
+        <div class="form_item">
+          <label for="taskTitle" class="">Titre</label>
+          <input type="text" name="taskTitle">
+        </div>
+        <div class="form_item">
+          <label for="taskDescription" class="">Description</label>
+          <textarea name="taskDescription"></textarea>
+        </div>
+        <div class="form_item">
+          <label for="taskDate" class="">Date limite</label>
+          <input type="date" name="taskDate">
+        </div>
+        <div class="form_item-btn">
+          <button id="closeModal">Annuler</button>
+          <button type="submit">Ajouter</button>
+        </div>
+      </form>
+    </div>
+  </div>
+    
+  <script src="tache.js"></script>
+</body>
+</html>
