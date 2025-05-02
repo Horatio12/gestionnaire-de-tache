@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de mot de passe</title>
+    <link rel="stylesheet" href="mdp.css">
+</head>
+<body>
+    <section class="inputBox">
+        <h2>Générer un mot de passe</h2>
+        <div class="PasswordBox">
+            <input type="text" id="password" readonly> 
+        </div>
+        <div>
+            <div class="buttons">
+                <button onclick="getPassword()">Générer</button>
+                <button id="Copy" onclick="copymdp">Copier</button>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="mdp.js"></script>
+    <script src="etudiant.js"></script>
+</body>
+</html>
